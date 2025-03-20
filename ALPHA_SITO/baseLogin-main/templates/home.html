@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Design by foolishdeveloper.com -->
+  <title>Home</title>
+
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <form>
+    <h3>Benvenuto, {{ username }}!</h3>
+    <p>Seleziona un'opzione:</p>
+    
+    <a href="/control" style="text-decoration: none;">
+      <button type="button" style="margin-top: 20px;">Controlla AlphaBot</button>
+    </a>
+    
+    <a href="/logout" style="text-decoration: none;">
+      <button type="button" style="margin-top: 20px;">Logout</button>
+    </a>
+  </form>
+</body>
+</html>

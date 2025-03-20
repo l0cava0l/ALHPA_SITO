@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AlphaBot Control</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <style>
+        .control-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .control-row {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .control-button {
+            margin: 0 10px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.13);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(8, 7, 16, 0.6);
+        }
+
+        .control-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .control-button i {
+            color: #ffffff;
+        }
+
+        .logout-button {
+            margin-top: 20px;
+            width: 100px;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <form class="control-container">
+        <h3>AlphaBot Control</h3>
+        <p>Benvenuto, {{ username }}!</p>
+
+        <!-- Pulsante Avanti -->
+        <div class="control-row">
+            <a href="/move/forward" class="control-button"><i class="fas fa-arrow-up"></i></a>
+        </div>
+
+        <!-- Pulsanti Sinistra, Stop, Destra -->
+        <div class="control-row">
+            <a href="/move/left" class="control-button"><i class="fas fa-arrow-left"></i></a>
+            <a href="/move/stop" class="control-button"><i class="fas fa-stop"></i></a>
+            <a href="/move/right" class="control-button"><i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Pulsante Indietro -->
+        <div class="control-row">
+            <a href="/move/backward" class="control-button"><i class="fas fa-arrow-down"></i></a>
+        </div>
+
+        <!-- Pulsante Logout -->
+        <a href="/logout" class="logout-button">Logout</a>
+    </form>
+</body>
+
+</html>

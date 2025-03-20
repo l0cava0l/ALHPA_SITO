@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Design by foolishdeveloper.com -->
+  <title>Create Account</title>
+
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <form action="/create_account" method="POST">
+    <h3>Create Account</h3>
+
+    {% if error %}
+    <p style="color: red; text-align: center;">{{ error }}</p>
+    {% endif %}
+
+    <label for="username">Username:</label>
+    <input type="email" placeholder="Email" id="e-mail" name="e-mail" required>
+
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Password" id="password" name="password" required>
+
+    <button type="submit">Create</button>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="/login" style="color: #ffffff; text-decoration: none;">Torna al login</a>
+    </div>
+  </form>
+</body>
+</html>
