@@ -135,32 +135,19 @@ button {
 
 .create-account {
   position: absolute;
-  /* Posizionamento rispetto alla finestra */
   bottom: 10px;
-  /* Distanza dal bordo inferiore */
   left: 50%;
-  /* Centra rispetto alla finestra */
   transform: translateX(-50%);
-  /* Corregge il centro */
   width: 400px;
-  /* Stessa larghezza del form */
   background-color: #ffffff;
-  /* Colore di sfondo */
   color: #080710;
-  /* Colore del testo */
   font-size: 16px;
-  /* Dimensione del testo */
   padding: 15px 0;
-  /* Altezza del pulsante */
   border-radius: 5px;
-  /* Angoli arrotondati */
   border: none;
-  /* Rimuove il bordo */
   cursor: pointer;
-  /* Cambia il puntatore */
 }
 
 .create-account:hover {
   background-color: rgba(255, 255, 255, 0.8);
-  /* Cambia colore al passaggio */
 }
